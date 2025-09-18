@@ -56,15 +56,23 @@ export default function Home() {
         )}
       </header>
 
-      {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/1600x900/?wood,floor,interior')" }}>
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative z-10 text-center text-white p-6 mt-20">
-          <h1 className="text-5xl font-bold mb-4">Harbour & Downs Flooring</h1>
-          <p className="text-xl mb-6">Expert consultancy in premium wood flooring solutions</p>
-          <button className="bg-[#E5DFD5] text-gray-900 px-6 py-3 rounded-md">Book a Consultation</button>
-        </div>
-      </section>
+{/* Hero */}
+<section className="relative h-screen flex items-center justify-center overflow-hidden">
+  <img
+    src="https://source.unsplash.com/1600x900/?wood,floor,interior"
+    alt="Wood flooring interior"
+    className="absolute inset-0 w-full h-full object-cover"
+    onError={(e) => {
+      e.currentTarget.src = "https://picsum.photos/1600/900?random=40";
+    }}
+  />
+  <div className="absolute inset-0 bg-black opacity-20"></div>
+  <div className="relative z-10 text-center text-white p-6 mt-20">
+    <h1 className="text-5xl font-bold mb-4">Harbour & Downs Flooring</h1>
+    <p className="text-xl mb-6">Expert consultancy in premium wood flooring solutions</p>
+    <button className="bg-[#E5DFD5] text-gray-900 px-6 py-3 rounded-md">Book a Consultation</button>
+  </div>
+</section>
 
       {/* About */}
       <section id="about" className="py-20 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
