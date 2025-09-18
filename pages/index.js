@@ -79,7 +79,7 @@ export default function Home() {
         <img src="https://source.unsplash.com/600x400/?oak,wood,flooring" alt="Wood flooring example" className="rounded-2xl shadow-lg" />
         <div>
           <h2 className="text-3xl font-semibold mb-4 text-[#4A4A48]">About Us</h2>
-          <p className="text-lg text-gray-700">At Harbour & Downs Flooring, we bring decades of expertise in guiding clients through the selection, design, and installation of timeless wood flooring. From engineered oak to bespoke herringbone patterns, we ensure solutions that balance beauty, durability, and practicality.</p>
+          <p className="text-lg text-gray-700">At Harbour & Downs Flooring, we bring years of expertise in guiding clients through the selection, design, and installation of timeless wood and stone flooring. From engineered oak to bespoke herringbone patterns, we ensure solutions that balance beauty, durability, and practicality.</p>
         </div>
       </section>
 
